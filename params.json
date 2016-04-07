@@ -1,0 +1,6 @@
+{
+  "name": "SequenceDiagram",
+  "tagline": "SequenceDiagram for IntelliJ IDEA",
+  "body": "# SequenceDiagram\r\nSequenceDiagram for IntelliJ IDEA\r\nhttp://vanco.github.io/SequencePlugin.\r\n\r\n## How to use\r\nSequenceDiagram ONLY generate sequence diagram for the CURRENT method in the editor.\r\n\r\nPlace the cursor in side the method, trigger it from context menu > Sequence Diagram...\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
