@@ -25,12 +25,70 @@
 <p>SequenceDiagram for IntelliJ IDEA
 <a href="http://vanco.github.io/SequencePlugin">http://vanco.github.io/SequencePlugin</a>.</p>
 
+<p>with this plugin, you can</p>
+
+<ul>
+<li>generate Simple Sequence Diagram.</li>
+<li>Navigate the code by click the diagram shape.</li>
+<li>Delete Class from diagram.</li>
+<li>Export the diagram as image.</li>
+<li>Exclude classes from diagram by Settings &gt; Other Settings &gt; Sequence</li>
+</ul>
+
+<h6>
+<a id="name-history" class="anchor" href="#name-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Name history</h6>
+
+<ul>
+<li>
+<strong>SequencePlugin</strong> Maintained by Kentaur(Kesh Sibilev, <a href="mailto:ksibilve@yahoo.com">ksibilve@yahoo.com</a>) until 2011</li>
+<li>
+<strong>SequencePluginReload</strong> Maintained by Vanhg(Evan Fan, <a href="mailto:fanhuagang@gmail.com">fanhuagang@gmail.com</a>) 2011 - 2015</li>
+<li>
+<strong>SequenceDiagram</strong> Maintained by Vanco(Evan Fan, <a href="mailto:fanhuagang@gmail.com">fanhuagang@gmail.com</a>) since 2016</li>
+</ul>
+
+<h6>
+<a id="why-change-name" class="anchor" href="#why-change-name" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why change name?</h6>
+
+<p>Since 2011, I found a solution of NPE of original <strong>SequencePlugin</strong>, so I write email to Kentaur with my solution,
+He said he was not coding any more. Instead, he send me the code. I fix the NPE issue and publish to plugin
+repository with new name <strong>SequencePluginReload</strong>.</p>
+
+<p>But in 2015, the IntelliJ change the login system, and I lost my account, cannot continue publish new version to
+the repository.</p>
+
+<p>In 2016, I change the Name again to <strong>SequenceDiagram</strong> and host the source code on <a href="https://github.com/Vanco/SequencePlugin">github</a>.
+Now it open source.</p>
+
+<p>Thanks Kentaur for the great work on the original source.</p>
+
 <h2>
 <a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use</h2>
 
 <p>SequenceDiagram ONLY generate sequence diagram for the CURRENT method in the editor.</p>
 
 <p>Place the cursor in side the method, trigger it from context menu &gt; Sequence Diagram...</p>
+
+<h2>
+<a id="version-history" class="anchor" href="#version-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version History</h2>
+
+<dl>
+        <dt>1.0.8</dt>
+        <dd>Refine not to call "<a href="https://github.com/Deprecated" class="user-mention">@Deprecated</a>" methods. Add Exclude Settings. Change the name to SequenceDiagram. </dd>
+        <dt>1.0.7</dt>
+        <dd>Remove "com.intellij.diagram" dependency. </dd>
+        <dt>1.0.6</dt>
+        <dd>HotFix: add missing res file in version 1.0.5.</dd>
+        <dt>1.0.5</dt>
+        <dd>Narrow the plugin support product list to java.[ABANDONED]</dd>
+        <dt>1.0.4</dt>
+        <dd>fixbug: go to source</dd>
+        <dt>1.0.3</dt>
+        <dd>fixbug: NPE when call psiMethod.getContainingClass() on enum class.</dd>
+        <dt>1.0.2</dt>
+        <dd>Add Sequence Diagram... menu under the Tools menu and Editor popup menu group with Diagram.</dd>
+        <dd>fixbug: method name with generic type.</dd>
+</dl>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Vanco/SequencePlugin">SequenceDiagram</a> is maintained by <a href="https://github.com/Vanco">Vanco</a>.</span>
