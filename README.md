@@ -59,3 +59,6 @@ Place the cursor in side the method, trigger it from context menu > Sequence Dia
         <dd>Add Sequence Diagram... menu under the Tools menu and Editor popup menu group with Diagram.</dd>
         <dd>fixbug: method name with generic type.</dd>
 </dl>
+
+## TODO
++ support *loop*,*alt*,*opt*
